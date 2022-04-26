@@ -1,7 +1,6 @@
 
 :root {
     --accent-color: #2196F3;
-    --accent-line: underline;
     --main-font:'Roboto',
     sans-serif;
     --secondary-font: 'Raleway',
@@ -42,17 +41,7 @@ body {
 .logo-span-light {
     color: #000000;;
 }
-.logo:hover,
-.logo:focus,
-.logo-span:hover,
-.logo-span:focus,
-.logo-span-dark:hover,
-.logo-span-dark:focus,
-.logo-span-light:hover,
-.logo-span-light:focus
- {
-     text-decoration: var(--accent-line);
-}
+
 .menu-link {
     font-weight: 500;
     font-size: 14px;
@@ -63,7 +52,6 @@ body {
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
-    text-decoration: var(--accent-line);
 }
 .contact-mail,
 .contact-phone {
@@ -78,11 +66,13 @@ body {
 .contact-phone:hover,
 .contact-phone:focus {
 color: #2196F3;
-text-decoration:underline
 }
 /* ========= /HEADER =========== */
 
 /* ========= Main ========== */
+.main {
+    background: #2F303A;
+}
 .main-titel {
     font-weight: 900;
     font-size: 44px;
@@ -91,8 +81,7 @@ text-decoration:underline
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #2F303A;
-}
+    }
 .button-titel {
     font-weight: 700;
     font-size: 16px;
@@ -104,6 +93,7 @@ text-decoration:underline
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 .special-titel {
     font-weight: 700;
@@ -166,8 +156,16 @@ text-decoration:underline
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: #2196F3;
+}
 /* ========= /Footer ========== */
 
+
+/* ========== Portfolio ========== */
 .filters-btn {
     font-weight: 500;
     font-size: 16px;
@@ -176,12 +174,14 @@ text-decoration:underline
     letter-spacing: 0.03em;
     color: #212121;
 }
+
 .filters-btn:hover,
 .filters-btn:focus {
     background: #2196F3;
     cursor: pointer;
     color: #FFFFFF;
 }
+
 .project-titel {
     font-weight: 700;
     font-size: 18px;
@@ -189,6 +189,7 @@ text-decoration:underline
     letter-spacing: 0.06em;
     color: #212121;
 }
+
 .project-item {
     font-weight: 400;
     font-size: 16px;
@@ -196,6 +197,4 @@ text-decoration:underline
     letter-spacing: 0.03em;
     color: #757575;
 }
-/* ========== Portfolio ========== */
-
 /* ========== /Portfolio ========== */
